@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Olá, mundo!</title>
   </head>
   <body>
@@ -77,60 +79,90 @@
       </blockquote>
       <hr color="blue">
       <br>
-      
+
+
       <img src="wireframe/hes2.png" style="
+      position: absolute;
+      width: 238.18px;
+      height: 450px;
+      left: 50px;
+      top: 1050px;
+     opacity: 0.7;
+  " class="img-fluid" alt="Imagem responsiva">
+  
+  <img src="wireframe/mael.png" style="
     position: absolute;
-    width: 238.18px;
-    height: 450px;
-    left: 50px;
-    top: 750px;
-   opacity: 0.7;
-" class="img-fluid" alt="Imagem responsiva">
+  width: 309px;
+  height: 438px;
+  left: 861px;
+  top: 1331px;
+  
+  background-image: url(wireframe//mael.png);
+  opacity: 0.7;;" class="img-fluid" alt="Imagem responsiva">
 
-<img src="wireframe/mael.png" style="
-  position: absolute;
-width: 309px;
-height: 438px;
-left: 861px;
-top: 1031px;
-
-background-image: url(wireframe//mael.png);
-opacity: 0.7;;" class="img-fluid" alt="Imagem responsiva">
-
-      <img src="wireframe/yu.webp" style="
-      position: absolute;
-      width: 196px;
-      height: 300px;
-      left: 655px;
-      border-radius: 10px;" class="img-fluid" alt="Imagem responsiva">
-
-<img src="wireframe/cha.png" style="
+  
+<div class="main-carousel">
+  <div class="cell">
+    <img src="wireframe/yu.webp" style="
 position: absolute;
 width: 196px;
 height: 300px;
-left: 445px;
-border-radius: 10px;" class="img-fluid" alt="Imagem responsiva">
 
-<img src="wireframe/tok.jpg" style="
-      position: absolute;
-      width: 196px;
-      height: 300px;
-      left: 875px;
-      border-radius: 10px;" class="img-fluid" alt="Imagem responsiva">
+border-radius: 10px;" class="img-fluid" alt="Imagem responsiva"></div>
 
-<img src="wireframe/dea.jpg" style="
+  <div class="cell">
+    <img src="wireframe/cha.png" style="
 position: absolute;
 width: 196px;
 height: 300px;
-left: 225px;
-border-radius: 10px;" class="img-fluid" alt="Imagem responsiva">
+
+border-radius: 10px;"  alt="Imagem responsiva"></div>
+
+  <div class="cell">
+    <img src="wireframe/tok.jpg" style="
+position: absolute;
+width: 196px;
+height: 300px;
+
+border-radius: 10px;" class="img-fluid" alt="Imagem responsiva"></div>
 
 
+  <div class="cell">
+    <img src="wireframe/dea.jpg" style="
+position: absolute;
+width: 196px;
+height: 300px;
 
+border-radius: 10px;" class="img-fluid" alt="Imagem responsiva"></div>
 
+<div class="cell">
+  <img src="wireframe/ble.jpg" style="
+position: absolute;
+width: 196px;
+height: 300px;
+
+border-radius: 10px;" class="img-fluid" alt="Imagem responsiva"></div>
+
+<div class="cell">
+  <img src="wireframe/dungeos.jpg" style="
+position: absolute;
+width: 196px;
+height: 300px;
+
+border-radius: 10px;" class="img-fluid" alt="Imagem responsiva"></div>
+</div>
+
+ 
 
       
-
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+        cellAlign: 'left',
+        wrapAround: true,
+        freeScoll: true
+    });
+</script>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -138,3 +170,5 @@ border-radius: 10px;" class="img-fluid" alt="Imagem responsiva">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
